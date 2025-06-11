@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Mario Bros</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="assets/logo-header.png" alt="imagem mario logo header ">
+        <a>Home</a>
+        <a>Nossos Serviços</a>
+        <a>Fale Conosco</a>
+    </header>
+
+    <main>
+        <div class="container1">
+            <img class="logo-mario" src="assets/logo.png" alt="imagem logo mario bros">
+            <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas Com Estilo!</p>
+            <p> Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
+            <button onclick="mostrarForm()">Entre em contato</button>
+        </div>
+
+        <div class="container2">
+            <img class="mario-luigi" src="assets/mario.png" alt="Logo Mario e Luigi">
+        </div>
+    </main>
+
+    <div class="container-video">
+        <video src="assets/video.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+    </div>
+
+    <a class="link-whatsapp" href="https://w.app/694vad">
+        <img src="assets/whatsapp.png" alt="imagem whatsapp">
+    </a>
+
+    <form class="formulario-fale-conosco" action="https://formcarry.com/s/uSVZYNrvqoN" method="POST"
+        enctype="multipart/form-data">
+
+
+        <input placeholder="Seu Nome" type="text" name="nome">
+        <input placeholder="Seu Telefone" type="tel" name="telefone">
+        <textarea placeholder="Digite Seu Problema Aqui..." name="duvida"></textarea>
+        <button type="submit">Pedir Orçamento</button>
+    </form>
+
+    <div class="mascara-formulario" onclick="esconderForm()"></div>
+
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
